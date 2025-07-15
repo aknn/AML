@@ -261,7 +261,7 @@ def plot_feature_importance(feature_importance, top_n=10):
     plt.title(f'Top {top_n} Most Important Features for Fraud Detection')
     plt.gca().invert_yaxis()
     plt.tight_layout()
-    plt.savefig('/Users/anilkumar/Documents/03.Learning/03.05 Python/AML/feature_importance.png', dpi=300, bbox_inches='tight')
+    plt.savefig('feature_importance.png', dpi=300, bbox_inches='tight')
     plt.show()
 
 def main():
@@ -306,7 +306,7 @@ def main():
     plot_feature_importance(results['feature_importance'])
 
     # Save the dataset for further analysis
-    df.to_csv('/Users/anilkumar/Documents/03.Learning/03.05 Python/AML/synthetic_transactions.csv', index=False)
+    df.to_csv('synthetic_transactions.csv', index=False)
     print("\nDataset saved to: synthetic_transactions.csv")
 
     print(f"\nExecution completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")

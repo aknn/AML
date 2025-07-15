@@ -198,7 +198,7 @@ def main():
         print(f"{row['feature']:30} {row['importance']:.4f}")
     
     # Save dataset
-    df.to_csv('/Users/anilkumar/Documents/03.Learning/03.05 Python/AML/synthetic_transactions.csv', index=False)
+    df.to_csv('synthetic_transactions.csv', index=False)
     print("\nDataset saved to: synthetic_transactions.csv")
     
     print("="*60)
